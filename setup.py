@@ -18,10 +18,10 @@ setup(
     include_package_data=True,
     url='https://github.com/botswana-harvard/edc-lab-dashboard',
     license='GPL license, see LICENSE',
-    description='Edc old lab classes',
+    description='Edc lab dashboard views',
     long_description=README,
     zip_safe=False,
-    keywords='Edc old lab classes',
+    keywords='Edc lab dashboard views',
     install_requires=['reportlab'],
     classifiers=[
         'Environment :: Web Environment',
@@ -29,8 +29,7 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU General Public License (GPL)',
         'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
         'Topic :: Internet :: WWW/HTTP',
     ],
 )
