@@ -10,18 +10,18 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='edc-lab',
-    version='0.1.1',
+    name='edc-lab-dashboard',
+    version='0.1.2',
     author=u'Erik van Widenfelt',
     author_email='ew2789@gmail.com',
     packages=find_packages(),
     include_package_data=True,
-    url='https://github.com/botswana-harvard/edc-lab',
+    url='https://github.com/botswana-harvard/edc-lab-dashboard',
     license='GPL license, see LICENSE',
-    description='Edc old lab classes',
+    description='Edc lab dashboard views',
     long_description=README,
     zip_safe=False,
-    keywords='Edc old lab classes',
+    keywords='Edc lab dashboard views',
     install_requires=['reportlab'],
     classifiers=[
         'Environment :: Web Environment',
@@ -29,8 +29,7 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU General Public License (GPL)',
         'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
         'Topic :: Internet :: WWW/HTTP',
     ],
 )
