@@ -1,0 +1,15 @@
+{% extends 'example_lab/base.html' %}
+{% load staticfiles %}
+
+{% block main %}
+
+{{ block.super }}
+
+<div class="container bg-3 text-center">
+		<h3> 
+			<a href="{% url 'edc_lab_dashboard:home_url' %}" class="btn btn-default btn-lg">Lab</a>
+		</h3>
+</div>
+
+
+{% endblock main %}
