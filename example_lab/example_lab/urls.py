@@ -8,7 +8,6 @@ from .views import HomeView, AdministrationView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('admin/', edc_lab_admin.urls),
-    path('tz_detect/', include('tz_detect.urls')),
     path('accounts/login/', LoginView.as_view(), name='login_url'),
     path('login/', LoginView.as_view(), name='login_url'),
     path('logout/', LogoutView.as_view(
