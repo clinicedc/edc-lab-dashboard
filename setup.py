@@ -16,7 +16,7 @@ setup(
     author_email='ew2789@gmail.com',
     packages=find_packages(),
     include_package_data=True,
-    url='https://github.com/botswana-harvard/edc-lab-dashboard',
+    url='https://github.com/clinicedc/edc-lab-dashboard',
     license='GPL license, see LICENSE',
     description='Edc lab dashboard views',
     long_description=README,
