@@ -36,7 +36,6 @@ setup(
         'edc-constants',
         'edc-dashboard',
         'edc-lab',
-        'edc-lab-label',
         'edc-label',
         'edc-model',
         'edc-model-wrapper',
