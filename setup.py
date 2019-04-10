@@ -32,7 +32,6 @@ setup(
     zip_safe=False,
     keywords='Edc lab dashboard views',
     install_requires=[
-        'edc-base',
         'edc-constants',
         'edc-dashboard',
         'edc-lab',
