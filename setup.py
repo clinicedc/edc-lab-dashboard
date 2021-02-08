@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import os
-from setuptools import setup
-from setuptools import find_packages
-from os.path import join, abspath, normpath, dirname
+from os.path import abspath, dirname, join, normpath
+
+from setuptools import find_packages, setup
 
 with open(os.path.join(os.path.dirname(__file__), "README.rst")) as readme:
     README = readme.read()
@@ -16,7 +16,7 @@ os.chdir(normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 setup(
     name="edc-lab-dashboard",
     version=VERSION,
-    author=u"Erik van Widenfelt",
+    author="Erik van Widenfelt",
     author_email="ew2789@gmail.com",
     packages=find_packages(),
     include_package_data=True,
@@ -39,5 +39,4 @@ setup(
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     ],
     python_requires=">=3.7",
-    test_suite="runtests.main",
 )
