@@ -2,7 +2,6 @@
 import logging
 from pathlib import Path
 
-from edc_constants.constants import IGNORE
 from edc_test_utils import DefaultTestSettings, func_main
 
 app_name = "edc_lab_dashboard"
@@ -15,7 +14,14 @@ project_settings = DefaultTestSettings(
     ETC_DIR=str(base_dir / app_name / "tests" / "etc"),
     SUBJECT_VISIT_MODEL="edc_visit_tracking.subjectvisit",
     SUBJECT_REQUISITION_MODEL="edc_lab.subjectrequisition",
-    EDC_NAVBAR_VERIFY_ON_LOAD=IGNORE,
+    SILENCED_SYSTEM_CHECKS=[
+        "sites.E101",
+        "edc_navbar.E002",
+        "edc_navbar.E003",
+        "edc_consent.E001",
+        "edc_sites.E001",
+        "edc_sites.E002",
+    ],
     EDC_AUTH_SKIP_SITE_AUTHS=True,
     EDC_AUTH_SKIP_AUTH_UPDATER=True,
     INSTALLED_APPS=[
@@ -32,6 +38,8 @@ project_settings = DefaultTestSettings(
         "edc_auth.apps.AppConfig",
         "edc_appointment.apps.AppConfig",
         "edc_dashboard.apps.AppConfig",
+        "edc_data_manager.apps.AppConfig",
+        "edc_form_runners.apps.AppConfig",
         "edc_device.apps.AppConfig",
         "edc_identifier.apps.AppConfig",
         "edc_label.apps.AppConfig",
@@ -46,6 +54,7 @@ project_settings = DefaultTestSettings(
         "edc_visit_tracking.apps.AppConfig",
         "edc_lab.apps.AppConfig",
         "edc_lab_dashboard.apps.AppConfig",
+        "edc_appconfig.apps.AppConfig",
     ],
     add_dashboard_middleware=True,
     add_lab_dashboard_middleware=True,
